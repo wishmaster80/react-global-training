@@ -15,15 +15,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:dev": "webpack --env dev",
+    "build:prod": "webpack --env prod"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "0.28.11",
     "html-webpack-plugin": "3.2.0",
     "webpack": "^4.6.0",
-    "css-loader": "0.28.11"
+    "webpack-cli": "^2.0.15"
   }
 }
