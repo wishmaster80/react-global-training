@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import AppPure from './AppPure'
 import registerServiceWorker from './registerServiceWorker';
-
 const HelloWorldFunctional = () => (
     <div>Hello Functional!</div>
    );
@@ -17,6 +16,6 @@ const HelloWorld = React.createElement(
 )
 
 
-ReactDOM.render(HelloWorld, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 registerServiceWorker();
