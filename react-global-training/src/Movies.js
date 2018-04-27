@@ -5,11 +5,9 @@ class Movies extends Component {
         searchText: '',
         movies: []
     }
-    search() {      
-        var movieslist = [1,2,4]; //todo
-        this.setState({
-            movies: movieslist
-        })
+    async search() {      
+        const movies = await this.GetMovies();        
+        this.setState({ movies: movies.data })
     }
 
     searchTextChange(event) {
@@ -17,6 +15,11 @@ class Movies extends Component {
             searchText: event.target.value
         });
     }
+
+    async GetMovies() {
+        const response = await fetch('http://react-cdp-api.herokuapp.com/movies')
+        return await response.json()
+      }
 
     render() {
         return (
@@ -55,6 +58,8 @@ const SearchPanel = ({ searchText, search }) => {
 
 
 const MoviesList = ({ movies }) => {
+    console.log(movies)
+    
     return (
         movies.map((movie) => <Movie key={movie.id} movie={movie} />)
     )
@@ -63,6 +68,6 @@ const MoviesList = ({ movies }) => {
 
 const Movie = ({ movie }) => {
     return (
-        <div>Movie detail TODO</div>
+        <div>{movie.title}</div>
     )
 }
