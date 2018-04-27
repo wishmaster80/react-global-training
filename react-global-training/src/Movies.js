@@ -87,11 +87,11 @@ const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
 }
 
 
-const MoviesList = ({ movies }) => {    
-    if(movies.length === 0)
-    return (<NoFilmsFound/>)
-    
-    return (                
+const MoviesList = ({ movies }) => {
+    if (movies.length === 0)
+        return (<NoFilmsFound />)
+
+    return (
         <div className="row">
             {movies.map((movie) => <Movie key={movie.id} movie={movie} />)}
         </div>
@@ -111,9 +111,11 @@ const Movie = ({ movie }) => {
             <img
                 src={movie.poster_path} alt={movie.title} width='300px'
             />
-            <h1>{movie.title}</h1>
-            <h2>{movie.release_date}</h2>
-            <h2>{movie.genres.reduce((prev, curr) => [...prev, ', ', curr])}</h2>
+            <div>
+                <p>{movie.title}</p>
+                <p >{movie.release_date}</p>
+                <p>{movie.genres.reduce((prev, curr) => [...prev, ', ', curr])}</p>
+            </div>
         </div>
     )
 }
