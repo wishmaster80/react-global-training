@@ -87,18 +87,29 @@ const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
 }
 
 
-const MoviesList = ({ movies }) => {
-    return (
-        movies.map((movie) => <Movie key={movie.id} movie={movie} />)
+const MoviesList = ({ movies }) => {    
+    if(movies.length === 0)
+    return (<NoFilmsFound/>)
+    
+    return (                
+        <div className="row">
+            {movies.map((movie) => <Movie key={movie.id} movie={movie} />)}
+        </div>
     )
 }
 
 
+const NoFilmsFound = () => {
+    return (
+        <h1>No films Found</h1>
+    )
+}
+
 const Movie = ({ movie }) => {
     return (
-        <div>
+        <div className="col" hight='300px' >
             <img
-                src={movie.poster_path} alt={movie.title}
+                src={movie.poster_path} alt={movie.title} width='300px'
             />
             <h1>{movie.title}</h1>
             <h2>{movie.release_date}</h2>
