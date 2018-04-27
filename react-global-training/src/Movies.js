@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Movies.css';
+import MoviesList from './MoviesList'
 class Movies extends Component {
     state = {
         searchText: '',
@@ -9,7 +10,7 @@ class Movies extends Component {
         sortBy: 'release_date'
     }
     async search() {
-        const movies = await this.GetMovies();
+        const movies = await this.getMovies();
         this.setState({
             movies: movies.data,
             counter: movies.total
@@ -34,7 +35,7 @@ class Movies extends Component {
         });
     }
 
-    async GetMovies() {
+    async getMovies() {
         var url = `http://react-cdp-api.herokuapp.com/movies?search=${this.state.searchText}&searchBy=${this.state.searchBy}&sortBy=${this.state.sortBy}`;
         console.log(url);
         const response = await fetch(url);
@@ -87,35 +88,3 @@ const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
 }
 
 
-const MoviesList = ({ movies }) => {
-    if (movies.length === 0)
-        return (<NoFilmsFound />)
-
-    return (
-        <div className="row">
-            {movies.map((movie) => <Movie key={movie.id} movie={movie} />)}
-        </div>
-    )
-}
-
-
-const NoFilmsFound = () => {
-    return (
-        <h1>No films Found</h1>
-    )
-}
-
-const Movie = ({ movie }) => {
-    return (
-        <div className="col" hight='300px' >
-            <img
-                src={movie.poster_path} alt={movie.title} width='300px'
-            />
-            <div>
-                <p>{movie.title}</p>
-                <p >{movie.release_date}</p>
-                <p>{movie.genres.reduce((prev, curr) => [...prev, ', ', curr])}</p>
-            </div>
-        </div>
-    )
-}

@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import './App.css';
 import ErrorBoundary from './ErrorBoundary'
 import Movies from './Movies'
+import Movie from './Movie'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
 class App extends Component {
 
   render() {
@@ -10,7 +17,12 @@ class App extends Component {
     return (
       <React.Fragment>
         <ErrorBoundary>
-          <Movies/>
+          <Router>
+            <React.Fragment>
+              <Route exact path="/" component={Movies} />
+              <Route path="/movie/:id" component={Movie} />
+            </React.Fragment>
+          </Router>
         </ErrorBoundary>
       </React.Fragment>
     );
