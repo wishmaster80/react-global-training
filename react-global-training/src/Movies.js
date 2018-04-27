@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Movies.css';
 class Movies extends Component {
     state = {
         searchText: '',
@@ -10,8 +10,10 @@ class Movies extends Component {
     }
     async search() {
         const movies = await this.GetMovies();
-        this.setState({ movies: movies.data,
-            counter: movies.total })
+        this.setState({
+            movies: movies.data,
+            counter: movies.total
+        })
     }
 
     searchTextChange(event) {
@@ -20,17 +22,17 @@ class Movies extends Component {
         });
     }
 
-    searchByChange(event) {        
+    searchByChange(event) {
         this.setState({
             searchBy: event.target.value,
         });
     }
 
-    sortByChange(event) {        
+    sortByChange(event) {
         this.setState({
             sortBy: event.target.value,
         });
-    }    
+    }
 
     async GetMovies() {
         var url = `http://react-cdp-api.herokuapp.com/movies?search=${this.state.searchText}&searchBy=${this.state.searchBy}&sortBy=${this.state.sortBy}`;
@@ -78,7 +80,7 @@ const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
                     <option value="release_date">release date</option>
                     <option value="vote_average">rating</option>
                 </select>
-            </div>            
+            </div>
             <button onClick={search}>SEARCH</button>
         </React.Fragment>
     );
@@ -94,6 +96,13 @@ const MoviesList = ({ movies }) => {
 
 const Movie = ({ movie }) => {
     return (
-        <div>{movie.title}</div>
+        <div>
+            <img
+                src={movie.poster_path} alt={movie.title}
+            />
+            <h1>{movie.title}</h1>
+            <h2>{movie.release_date}</h2>
+            <h2>{movie.genres.reduce((prev, curr) => [...prev, ', ', curr])}</h2>
+        </div>
     )
 }
