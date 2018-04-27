@@ -3,30 +3,51 @@ import './App.css';
 class Movies extends Component {
     state = {
         searchText: '',
-        movies: []
+        movies: [],
+        searchBy: 'title',
+        counter: 0,
+        sortBy: 'release_date'
     }
-    async search() {      
-        const movies = await this.GetMovies();        
-        this.setState({ movies: movies.data })
+    async search() {
+        const movies = await this.GetMovies();
+        this.setState({ movies: movies.data,
+            counter: movies.total })
     }
 
     searchTextChange(event) {
         this.setState({
-            searchText: event.target.value
+            searchText: event.target.value,
         });
     }
 
+    searchByChange(event) {        
+        this.setState({
+            searchBy: event.target.value,
+        });
+    }
+
+    sortByChange(event) {        
+        this.setState({
+            sortBy: event.target.value,
+        });
+    }    
+
     async GetMovies() {
-        const response = await fetch('http://react-cdp-api.herokuapp.com/movies')
+        var url = `http://react-cdp-api.herokuapp.com/movies?search=${this.state.searchText}&searchBy=${this.state.searchBy}&sortBy=${this.state.sortBy}`;
+        console.log(url);
+        const response = await fetch(url);
         return await response.json()
-      }
+    }
 
     render() {
         return (
             <React.Fragment>
                 <SearchPanel
                     searchText={this.searchTextChange.bind(this)}
-                    search={this.search.bind(this)} />
+                    search={this.search.bind(this)}
+                    counter={this.state.counter}
+                    searchBy={this.searchByChange.bind(this)}
+                    sortBy={this.sortByChange.bind(this)} />
                 <MoviesList movies={this.state.movies} />
             </React.Fragment>
 
@@ -36,7 +57,7 @@ class Movies extends Component {
 export default Movies;
 
 
-const SearchPanel = ({ searchText, search }) => {
+const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
     return (
         <React.Fragment>
             <div>
@@ -45,21 +66,26 @@ const SearchPanel = ({ searchText, search }) => {
             <input onChange={searchText} />
             <div>
                 Search By
-            <select>
+                <select onChange={searchBy}>
                     <option value="title">Title</option>
                     <option value="genre">Genre</option>
                 </select>
             </div>
+            <div>{counter} movies found</div>
+            <div>
+                Sort By
+                <select onChange={sortBy}>
+                    <option value="release_date">release date</option>
+                    <option value="vote_average">rating</option>
+                </select>
+            </div>            
             <button onClick={search}>SEARCH</button>
-
         </React.Fragment>
     );
 }
 
 
 const MoviesList = ({ movies }) => {
-    console.log(movies)
-    
     return (
         movies.map((movie) => <Movie key={movie.id} movie={movie} />)
     )
