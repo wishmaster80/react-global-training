@@ -42,8 +42,7 @@ class Movies extends Component {
     }
 
 
-    render() {
-        console.log("render-----------------------")
+    render() {        
         return (
             <React.Fragment>
                 <SearchPanel
