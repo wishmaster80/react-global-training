@@ -4,13 +4,17 @@ import MoviesList from './MoviesList'
 import getMovies from './getMovies'
 
 class Movies extends Component {
-    state = {
-        searchText: '',
-        movies: [],
-        searchBy: 'title',
-        counter: 0,
-        sortBy: 'release_date'
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchText: '',
+            movies: [],
+            searchBy: 'title',
+            counter: 0,
+            sortBy: 'release_date'
+        }
     }
+
     async search() {
         const movies = await getMovies(this.state.searchText, this.state.searchBy, this.state.sortBy);
         this.setState({
@@ -39,6 +43,7 @@ class Movies extends Component {
 
 
     render() {
+        console.log("render-----------------------")
         return (
             <React.Fragment>
                 <SearchPanel
@@ -49,7 +54,6 @@ class Movies extends Component {
                     sortBy={this.sortByChange.bind(this)} />
                 <MoviesList movies={this.state.movies} />
             </React.Fragment>
-
         )
     }
 }

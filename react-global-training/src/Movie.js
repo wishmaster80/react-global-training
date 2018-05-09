@@ -4,9 +4,12 @@ import MoviesList from './MoviesList'
 import { Link } from 'react-router-dom';
 
 class Movie extends Component {
-    state = {
-        movie: {},
-        movies: []
+    constructor(props) {
+        super(props);
+        this.state = {
+            movie: {},
+            movies: []
+        }
     }
 
     async componentDidMount() {
