@@ -1,0 +1,1208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieList 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MoviesList
+    movies={
+      Array [
+        Object {
+          "budget": 923000,
+          "genres": Array [
+            "Adventure",
+            "Comedy",
+            "Drama",
+          ],
+          "id": 962,
+          "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+          "release_date": "1925-06-25",
+          "revenue": 2500000,
+          "runtime": 95,
+          "tagline": "The World's Greatest Laughing Picture!",
+          "title": "The Gold Rush",
+          "vote_average": 7.8,
+          "vote_count": 411,
+        },
+        Object {
+          "budget": 92620000,
+          "genres": Array [
+            "Drama",
+            "Science Fiction",
+          ],
+          "id": 19,
+          "overview": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg",
+          "release_date": "1927-01-10",
+          "revenue": 650422,
+          "runtime": 153,
+          "tagline": "There can be no understanding between the hands and the brain unless the heart acts as mediator.",
+          "title": "Metropolis",
+          "vote_average": 8.1,
+          "vote_count": 837,
+        },
+        Object {
+          "budget": 1250000,
+          "genres": Array [
+            "Drama",
+            "War",
+          ],
+          "id": 143,
+          "overview": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I. Together with several other young German soldiers, he experiences the horrors of war, such evil of which he had not conceived of when signing up to fight. They eventually become sad, tormented, and confused of their purpose.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg",
+          "release_date": "1930-04-29",
+          "revenue": 0,
+          "runtime": 133,
+          "tagline": "They left for war as boys never to return as men.",
+          "title": "All Quiet on the Western Front",
+          "vote_average": 7.6,
+          "vote_count": 216,
+        },
+        Object {
+          "budget": 1500000,
+          "genres": Array [
+            "Comedy",
+            "Drama",
+            "Romance",
+          ],
+          "id": 901,
+          "overview": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl. The film was a great success and today is deemed a cult classic.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+          "release_date": "1931-01-30",
+          "revenue": 19181,
+          "runtime": 87,
+          "tagline": "True Blind Love",
+          "title": "City Lights",
+          "vote_average": 8.2,
+          "vote_count": 581,
+        },
+        Object {
+          "budget": 355000,
+          "genres": Array [
+            "Horror",
+          ],
+          "id": 138,
+          "overview": "The legend of vampire Count Dracula begins here with this original 1931 Dracula film from Bela Lugosi.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/hA9kQrIwDHJKl1pt8GpJdDnBzim.jpg",
+          "release_date": "1931-02-12",
+          "revenue": 0,
+          "runtime": 72,
+          "tagline": "The story of the strangest passion the world has ever known!",
+          "title": "Dracula",
+          "vote_average": 7.2,
+          "vote_count": 329,
+        },
+        Object {
+          "budget": 291000,
+          "genres": Array [
+            "Drama",
+            "Horror",
+            "Science Fiction",
+          ],
+          "id": 3035,
+          "overview": "Henry Frankenstein is a doctor who is trying to discover a way to make the dead walk. He succeeds and creates a monster that has to deal with living again.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/wB58wlBAr6484Wm6VyFDqSD8VOJ.jpg",
+          "release_date": "1931-11-21",
+          "revenue": 12000000,
+          "runtime": 71,
+          "tagline": "The man who made a monster.",
+          "title": "Frankenstein",
+          "vote_average": 7.4,
+          "vote_count": 395,
+        },
+        Object {
+          "budget": 196000,
+          "genres": Array [
+            "Horror",
+          ],
+          "id": 15849,
+          "overview": "An ancient Egyptian priest called Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep, escaping from the field site, goes in search for the reincarnation of the soul of his lover.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+          "release_date": "1932-12-22",
+          "revenue": 0,
+          "runtime": 73,
+          "tagline": "It comes to life!",
+          "title": "The Mummy",
+          "vote_average": 6.8,
+          "vote_count": 155,
+        },
+        Object {
+          "budget": 672000,
+          "genres": Array [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Horror",
+          ],
+          "id": 244,
+          "overview": "An adventure film about a film crew in search of a monster on a remote island. The crew finds King Kong and decides to take him back to New York as a money making spectacle. The film is a masterpiece of Stop-Motion in filmmaking history and inspired a line of King Kong films.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/vXInYahVp31uL8wZORckaoHq565.jpg",
+          "release_date": "1933-04-07",
+          "revenue": 10000000,
+          "runtime": 100,
+          "tagline": "A Monster of Creation's Dawn Breaks Loose in Our World Today!",
+          "title": "King Kong",
+          "vote_average": 7.7,
+          "vote_count": 448,
+        },
+        Object {
+          "budget": 325000,
+          "genres": Array [
+            "Comedy",
+            "Romance",
+          ],
+          "id": 3078,
+          "overview": "Ellie Andrews has just tied the knot with society aviator King Westley when she is whisked away to her father's yacht and out of King's clutches. Ellie jumps ship and eventually winds up on a bus headed back to her husband. Reluctantly she must accept the help of out-of- work reporter Peter Warne. Actually, Warne doesn't give her any choice: either she sticks with him until he gets her back to her husband, or he'll blow the whistle on Ellie to her father. Either way, Peter gets what he wants... a really juicy newspaper story!",
+          "poster_path": "https://image.tmdb.org/t/p/w500/k63JqnFvkIGWGhjsqRiksZw2OSs.jpg",
+          "release_date": "1934-02-22",
+          "revenue": 4500000,
+          "runtime": 105,
+          "tagline": "TOGETHER... for the first time",
+          "title": "It Happened One Night",
+          "vote_average": 7.7,
+          "vote_count": 356,
+        },
+        Object {
+          "budget": 0,
+          "genres": Array [
+            "Action",
+            "Thriller",
+            "Mystery",
+          ],
+          "id": 260,
+          "overview": "Canadian Richard Hannay, residing in London, meets secret agent Annabella Smith immediately following a shots fired incident. She asks to go home with him. Back at Hannay's flat the mysterious woman confides that she fears for her life and is on a critical mission relating to protecting state air ministry secrets. Later that night assassins murder her. Believed by the police to be her killer, Hannay is forced to go on the run and flees to Scotland in a desperate attempt to see Annabella's mission through before it's too late. Along the way he chances upon beautiful Pamela, who unwillingly becomes his accomplice in the mission.",
+          "poster_path": "https://image.tmdb.org/t/p/w500/9v283GWj9a0AC8wwC4zriNqY1lZ.jpg",
+          "release_date": "1935-06-01",
+          "revenue": 0,
+          "runtime": 86,
+          "tagline": "Handcuffed to the girl who double-crossed him",
+          "title": "The 39 Steps",
+          "vote_average": 7.5,
+          "vote_count": 274,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Movie
+          movie={
+            Object {
+              "budget": 923000,
+              "genres": Array [
+                "Adventure",
+                "Comedy",
+                "Drama",
+              ],
+              "id": 962,
+              "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+              "release_date": "1925-06-25",
+              "revenue": 2500000,
+              "runtime": 95,
+              "tagline": "The World's Greatest Laughing Picture!",
+              "title": "The Gold Rush",
+              "vote_average": 7.8,
+              "vote_count": 411,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 92620000,
+              "genres": Array [
+                "Drama",
+                "Science Fiction",
+              ],
+              "id": 19,
+              "overview": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg",
+              "release_date": "1927-01-10",
+              "revenue": 650422,
+              "runtime": 153,
+              "tagline": "There can be no understanding between the hands and the brain unless the heart acts as mediator.",
+              "title": "Metropolis",
+              "vote_average": 8.1,
+              "vote_count": 837,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 1250000,
+              "genres": Array [
+                "Drama",
+                "War",
+              ],
+              "id": 143,
+              "overview": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I. Together with several other young German soldiers, he experiences the horrors of war, such evil of which he had not conceived of when signing up to fight. They eventually become sad, tormented, and confused of their purpose.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg",
+              "release_date": "1930-04-29",
+              "revenue": 0,
+              "runtime": 133,
+              "tagline": "They left for war as boys never to return as men.",
+              "title": "All Quiet on the Western Front",
+              "vote_average": 7.6,
+              "vote_count": 216,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 1500000,
+              "genres": Array [
+                "Comedy",
+                "Drama",
+                "Romance",
+              ],
+              "id": 901,
+              "overview": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl. The film was a great success and today is deemed a cult classic.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+              "release_date": "1931-01-30",
+              "revenue": 19181,
+              "runtime": 87,
+              "tagline": "True Blind Love",
+              "title": "City Lights",
+              "vote_average": 8.2,
+              "vote_count": 581,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 355000,
+              "genres": Array [
+                "Horror",
+              ],
+              "id": 138,
+              "overview": "The legend of vampire Count Dracula begins here with this original 1931 Dracula film from Bela Lugosi.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/hA9kQrIwDHJKl1pt8GpJdDnBzim.jpg",
+              "release_date": "1931-02-12",
+              "revenue": 0,
+              "runtime": 72,
+              "tagline": "The story of the strangest passion the world has ever known!",
+              "title": "Dracula",
+              "vote_average": 7.2,
+              "vote_count": 329,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 291000,
+              "genres": Array [
+                "Drama",
+                "Horror",
+                "Science Fiction",
+              ],
+              "id": 3035,
+              "overview": "Henry Frankenstein is a doctor who is trying to discover a way to make the dead walk. He succeeds and creates a monster that has to deal with living again.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/wB58wlBAr6484Wm6VyFDqSD8VOJ.jpg",
+              "release_date": "1931-11-21",
+              "revenue": 12000000,
+              "runtime": 71,
+              "tagline": "The man who made a monster.",
+              "title": "Frankenstein",
+              "vote_average": 7.4,
+              "vote_count": 395,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 196000,
+              "genres": Array [
+                "Horror",
+              ],
+              "id": 15849,
+              "overview": "An ancient Egyptian priest called Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep, escaping from the field site, goes in search for the reincarnation of the soul of his lover.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+              "release_date": "1932-12-22",
+              "revenue": 0,
+              "runtime": 73,
+              "tagline": "It comes to life!",
+              "title": "The Mummy",
+              "vote_average": 6.8,
+              "vote_count": 155,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 672000,
+              "genres": Array [
+                "Action",
+                "Adventure",
+                "Drama",
+                "Horror",
+              ],
+              "id": 244,
+              "overview": "An adventure film about a film crew in search of a monster on a remote island. The crew finds King Kong and decides to take him back to New York as a money making spectacle. The film is a masterpiece of Stop-Motion in filmmaking history and inspired a line of King Kong films.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/vXInYahVp31uL8wZORckaoHq565.jpg",
+              "release_date": "1933-04-07",
+              "revenue": 10000000,
+              "runtime": 100,
+              "tagline": "A Monster of Creation's Dawn Breaks Loose in Our World Today!",
+              "title": "King Kong",
+              "vote_average": 7.7,
+              "vote_count": 448,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 325000,
+              "genres": Array [
+                "Comedy",
+                "Romance",
+              ],
+              "id": 3078,
+              "overview": "Ellie Andrews has just tied the knot with society aviator King Westley when she is whisked away to her father's yacht and out of King's clutches. Ellie jumps ship and eventually winds up on a bus headed back to her husband. Reluctantly she must accept the help of out-of- work reporter Peter Warne. Actually, Warne doesn't give her any choice: either she sticks with him until he gets her back to her husband, or he'll blow the whistle on Ellie to her father. Either way, Peter gets what he wants... a really juicy newspaper story!",
+              "poster_path": "https://image.tmdb.org/t/p/w500/k63JqnFvkIGWGhjsqRiksZw2OSs.jpg",
+              "release_date": "1934-02-22",
+              "revenue": 4500000,
+              "runtime": 105,
+              "tagline": "TOGETHER... for the first time",
+              "title": "It Happened One Night",
+              "vote_average": 7.7,
+              "vote_count": 356,
+            }
+          }
+        />,
+        <Movie
+          movie={
+            Object {
+              "budget": 0,
+              "genres": Array [
+                "Action",
+                "Thriller",
+                "Mystery",
+              ],
+              "id": 260,
+              "overview": "Canadian Richard Hannay, residing in London, meets secret agent Annabella Smith immediately following a shots fired incident. She asks to go home with him. Back at Hannay's flat the mysterious woman confides that she fears for her life and is on a critical mission relating to protecting state air ministry secrets. Later that night assassins murder her. Believed by the police to be her killer, Hannay is forced to go on the run and flees to Scotland in a desperate attempt to see Annabella's mission through before it's too late. Along the way he chances upon beautiful Pamela, who unwillingly becomes his accomplice in the mission.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/9v283GWj9a0AC8wwC4zriNqY1lZ.jpg",
+              "release_date": "1935-06-01",
+              "revenue": 0,
+              "runtime": 86,
+              "tagline": "Handcuffed to the girl who double-crossed him",
+              "title": "The 39 Steps",
+              "vote_average": 7.5,
+              "vote_count": 274,
+            }
+          }
+        />,
+      ],
+      "className": "row",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "962",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 923000,
+            "genres": Array [
+              "Adventure",
+              "Comedy",
+              "Drama",
+            ],
+            "id": 962,
+            "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+            "release_date": "1925-06-25",
+            "revenue": 2500000,
+            "runtime": 95,
+            "tagline": "The World's Greatest Laughing Picture!",
+            "title": "The Gold Rush",
+            "vote_average": 7.8,
+            "vote_count": 411,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "19",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 92620000,
+            "genres": Array [
+              "Drama",
+              "Science Fiction",
+            ],
+            "id": 19,
+            "overview": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg",
+            "release_date": "1927-01-10",
+            "revenue": 650422,
+            "runtime": 153,
+            "tagline": "There can be no understanding between the hands and the brain unless the heart acts as mediator.",
+            "title": "Metropolis",
+            "vote_average": 8.1,
+            "vote_count": 837,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "143",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 1250000,
+            "genres": Array [
+              "Drama",
+              "War",
+            ],
+            "id": 143,
+            "overview": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I. Together with several other young German soldiers, he experiences the horrors of war, such evil of which he had not conceived of when signing up to fight. They eventually become sad, tormented, and confused of their purpose.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg",
+            "release_date": "1930-04-29",
+            "revenue": 0,
+            "runtime": 133,
+            "tagline": "They left for war as boys never to return as men.",
+            "title": "All Quiet on the Western Front",
+            "vote_average": 7.6,
+            "vote_count": 216,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "901",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 1500000,
+            "genres": Array [
+              "Comedy",
+              "Drama",
+              "Romance",
+            ],
+            "id": 901,
+            "overview": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl. The film was a great success and today is deemed a cult classic.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+            "release_date": "1931-01-30",
+            "revenue": 19181,
+            "runtime": 87,
+            "tagline": "True Blind Love",
+            "title": "City Lights",
+            "vote_average": 8.2,
+            "vote_count": 581,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "138",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 355000,
+            "genres": Array [
+              "Horror",
+            ],
+            "id": 138,
+            "overview": "The legend of vampire Count Dracula begins here with this original 1931 Dracula film from Bela Lugosi.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/hA9kQrIwDHJKl1pt8GpJdDnBzim.jpg",
+            "release_date": "1931-02-12",
+            "revenue": 0,
+            "runtime": 72,
+            "tagline": "The story of the strangest passion the world has ever known!",
+            "title": "Dracula",
+            "vote_average": 7.2,
+            "vote_count": 329,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3035",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 291000,
+            "genres": Array [
+              "Drama",
+              "Horror",
+              "Science Fiction",
+            ],
+            "id": 3035,
+            "overview": "Henry Frankenstein is a doctor who is trying to discover a way to make the dead walk. He succeeds and creates a monster that has to deal with living again.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/wB58wlBAr6484Wm6VyFDqSD8VOJ.jpg",
+            "release_date": "1931-11-21",
+            "revenue": 12000000,
+            "runtime": 71,
+            "tagline": "The man who made a monster.",
+            "title": "Frankenstein",
+            "vote_average": 7.4,
+            "vote_count": 395,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "15849",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 196000,
+            "genres": Array [
+              "Horror",
+            ],
+            "id": 15849,
+            "overview": "An ancient Egyptian priest called Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep, escaping from the field site, goes in search for the reincarnation of the soul of his lover.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+            "release_date": "1932-12-22",
+            "revenue": 0,
+            "runtime": 73,
+            "tagline": "It comes to life!",
+            "title": "The Mummy",
+            "vote_average": 6.8,
+            "vote_count": 155,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "244",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 672000,
+            "genres": Array [
+              "Action",
+              "Adventure",
+              "Drama",
+              "Horror",
+            ],
+            "id": 244,
+            "overview": "An adventure film about a film crew in search of a monster on a remote island. The crew finds King Kong and decides to take him back to New York as a money making spectacle. The film is a masterpiece of Stop-Motion in filmmaking history and inspired a line of King Kong films.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/vXInYahVp31uL8wZORckaoHq565.jpg",
+            "release_date": "1933-04-07",
+            "revenue": 10000000,
+            "runtime": 100,
+            "tagline": "A Monster of Creation's Dawn Breaks Loose in Our World Today!",
+            "title": "King Kong",
+            "vote_average": 7.7,
+            "vote_count": 448,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3078",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 325000,
+            "genres": Array [
+              "Comedy",
+              "Romance",
+            ],
+            "id": 3078,
+            "overview": "Ellie Andrews has just tied the knot with society aviator King Westley when she is whisked away to her father's yacht and out of King's clutches. Ellie jumps ship and eventually winds up on a bus headed back to her husband. Reluctantly she must accept the help of out-of- work reporter Peter Warne. Actually, Warne doesn't give her any choice: either she sticks with him until he gets her back to her husband, or he'll blow the whistle on Ellie to her father. Either way, Peter gets what he wants... a really juicy newspaper story!",
+            "poster_path": "https://image.tmdb.org/t/p/w500/k63JqnFvkIGWGhjsqRiksZw2OSs.jpg",
+            "release_date": "1934-02-22",
+            "revenue": 4500000,
+            "runtime": 105,
+            "tagline": "TOGETHER... for the first time",
+            "title": "It Happened One Night",
+            "vote_average": 7.7,
+            "vote_count": 356,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "260",
+        "nodeType": "function",
+        "props": Object {
+          "movie": Object {
+            "budget": 0,
+            "genres": Array [
+              "Action",
+              "Thriller",
+              "Mystery",
+            ],
+            "id": 260,
+            "overview": "Canadian Richard Hannay, residing in London, meets secret agent Annabella Smith immediately following a shots fired incident. She asks to go home with him. Back at Hannay's flat the mysterious woman confides that she fears for her life and is on a critical mission relating to protecting state air ministry secrets. Later that night assassins murder her. Believed by the police to be her killer, Hannay is forced to go on the run and flees to Scotland in a desperate attempt to see Annabella's mission through before it's too late. Along the way he chances upon beautiful Pamela, who unwillingly becomes his accomplice in the mission.",
+            "poster_path": "https://image.tmdb.org/t/p/w500/9v283GWj9a0AC8wwC4zriNqY1lZ.jpg",
+            "release_date": "1935-06-01",
+            "revenue": 0,
+            "runtime": 86,
+            "tagline": "Handcuffed to the girl who double-crossed him",
+            "title": "The 39 Steps",
+            "vote_average": 7.5,
+            "vote_count": 274,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Movie
+            movie={
+              Object {
+                "budget": 923000,
+                "genres": Array [
+                  "Adventure",
+                  "Comedy",
+                  "Drama",
+                ],
+                "id": 962,
+                "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+                "release_date": "1925-06-25",
+                "revenue": 2500000,
+                "runtime": 95,
+                "tagline": "The World's Greatest Laughing Picture!",
+                "title": "The Gold Rush",
+                "vote_average": 7.8,
+                "vote_count": 411,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 92620000,
+                "genres": Array [
+                  "Drama",
+                  "Science Fiction",
+                ],
+                "id": 19,
+                "overview": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg",
+                "release_date": "1927-01-10",
+                "revenue": 650422,
+                "runtime": 153,
+                "tagline": "There can be no understanding between the hands and the brain unless the heart acts as mediator.",
+                "title": "Metropolis",
+                "vote_average": 8.1,
+                "vote_count": 837,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 1250000,
+                "genres": Array [
+                  "Drama",
+                  "War",
+                ],
+                "id": 143,
+                "overview": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I. Together with several other young German soldiers, he experiences the horrors of war, such evil of which he had not conceived of when signing up to fight. They eventually become sad, tormented, and confused of their purpose.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg",
+                "release_date": "1930-04-29",
+                "revenue": 0,
+                "runtime": 133,
+                "tagline": "They left for war as boys never to return as men.",
+                "title": "All Quiet on the Western Front",
+                "vote_average": 7.6,
+                "vote_count": 216,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 1500000,
+                "genres": Array [
+                  "Comedy",
+                  "Drama",
+                  "Romance",
+                ],
+                "id": 901,
+                "overview": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl. The film was a great success and today is deemed a cult classic.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+                "release_date": "1931-01-30",
+                "revenue": 19181,
+                "runtime": 87,
+                "tagline": "True Blind Love",
+                "title": "City Lights",
+                "vote_average": 8.2,
+                "vote_count": 581,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 355000,
+                "genres": Array [
+                  "Horror",
+                ],
+                "id": 138,
+                "overview": "The legend of vampire Count Dracula begins here with this original 1931 Dracula film from Bela Lugosi.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/hA9kQrIwDHJKl1pt8GpJdDnBzim.jpg",
+                "release_date": "1931-02-12",
+                "revenue": 0,
+                "runtime": 72,
+                "tagline": "The story of the strangest passion the world has ever known!",
+                "title": "Dracula",
+                "vote_average": 7.2,
+                "vote_count": 329,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 291000,
+                "genres": Array [
+                  "Drama",
+                  "Horror",
+                  "Science Fiction",
+                ],
+                "id": 3035,
+                "overview": "Henry Frankenstein is a doctor who is trying to discover a way to make the dead walk. He succeeds and creates a monster that has to deal with living again.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/wB58wlBAr6484Wm6VyFDqSD8VOJ.jpg",
+                "release_date": "1931-11-21",
+                "revenue": 12000000,
+                "runtime": 71,
+                "tagline": "The man who made a monster.",
+                "title": "Frankenstein",
+                "vote_average": 7.4,
+                "vote_count": 395,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 196000,
+                "genres": Array [
+                  "Horror",
+                ],
+                "id": 15849,
+                "overview": "An ancient Egyptian priest called Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep, escaping from the field site, goes in search for the reincarnation of the soul of his lover.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+                "release_date": "1932-12-22",
+                "revenue": 0,
+                "runtime": 73,
+                "tagline": "It comes to life!",
+                "title": "The Mummy",
+                "vote_average": 6.8,
+                "vote_count": 155,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 672000,
+                "genres": Array [
+                  "Action",
+                  "Adventure",
+                  "Drama",
+                  "Horror",
+                ],
+                "id": 244,
+                "overview": "An adventure film about a film crew in search of a monster on a remote island. The crew finds King Kong and decides to take him back to New York as a money making spectacle. The film is a masterpiece of Stop-Motion in filmmaking history and inspired a line of King Kong films.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/vXInYahVp31uL8wZORckaoHq565.jpg",
+                "release_date": "1933-04-07",
+                "revenue": 10000000,
+                "runtime": 100,
+                "tagline": "A Monster of Creation's Dawn Breaks Loose in Our World Today!",
+                "title": "King Kong",
+                "vote_average": 7.7,
+                "vote_count": 448,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 325000,
+                "genres": Array [
+                  "Comedy",
+                  "Romance",
+                ],
+                "id": 3078,
+                "overview": "Ellie Andrews has just tied the knot with society aviator King Westley when she is whisked away to her father's yacht and out of King's clutches. Ellie jumps ship and eventually winds up on a bus headed back to her husband. Reluctantly she must accept the help of out-of- work reporter Peter Warne. Actually, Warne doesn't give her any choice: either she sticks with him until he gets her back to her husband, or he'll blow the whistle on Ellie to her father. Either way, Peter gets what he wants... a really juicy newspaper story!",
+                "poster_path": "https://image.tmdb.org/t/p/w500/k63JqnFvkIGWGhjsqRiksZw2OSs.jpg",
+                "release_date": "1934-02-22",
+                "revenue": 4500000,
+                "runtime": 105,
+                "tagline": "TOGETHER... for the first time",
+                "title": "It Happened One Night",
+                "vote_average": 7.7,
+                "vote_count": 356,
+              }
+            }
+          />,
+          <Movie
+            movie={
+              Object {
+                "budget": 0,
+                "genres": Array [
+                  "Action",
+                  "Thriller",
+                  "Mystery",
+                ],
+                "id": 260,
+                "overview": "Canadian Richard Hannay, residing in London, meets secret agent Annabella Smith immediately following a shots fired incident. She asks to go home with him. Back at Hannay's flat the mysterious woman confides that she fears for her life and is on a critical mission relating to protecting state air ministry secrets. Later that night assassins murder her. Believed by the police to be her killer, Hannay is forced to go on the run and flees to Scotland in a desperate attempt to see Annabella's mission through before it's too late. Along the way he chances upon beautiful Pamela, who unwillingly becomes his accomplice in the mission.",
+                "poster_path": "https://image.tmdb.org/t/p/w500/9v283GWj9a0AC8wwC4zriNqY1lZ.jpg",
+                "release_date": "1935-06-01",
+                "revenue": 0,
+                "runtime": 86,
+                "tagline": "Handcuffed to the girl who double-crossed him",
+                "title": "The 39 Steps",
+                "vote_average": 7.5,
+                "vote_count": 274,
+              }
+            }
+          />,
+        ],
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "962",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 923000,
+              "genres": Array [
+                "Adventure",
+                "Comedy",
+                "Drama",
+              ],
+              "id": 962,
+              "overview": "A lone prospector ventures into Alaska looking for gold. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/eQRFo1qwRREYwj47Yoe1PisgOle.jpg",
+              "release_date": "1925-06-25",
+              "revenue": 2500000,
+              "runtime": 95,
+              "tagline": "The World's Greatest Laughing Picture!",
+              "title": "The Gold Rush",
+              "vote_average": 7.8,
+              "vote_count": 411,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "19",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 92620000,
+              "genres": Array [
+                "Drama",
+                "Science Fiction",
+              ],
+              "id": 19,
+              "overview": "In a futuristic city sharply divided between the working class and the city planners, the son of the city's mastermind falls in love with a working class prophet who predicts the coming of a savior to mediate their differences.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/qriaeUUwdmlgethK3aSAx68mG05.jpg",
+              "release_date": "1927-01-10",
+              "revenue": 650422,
+              "runtime": 153,
+              "tagline": "There can be no understanding between the hands and the brain unless the heart acts as mediator.",
+              "title": "Metropolis",
+              "vote_average": 8.1,
+              "vote_count": 837,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "143",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 1250000,
+              "genres": Array [
+                "Drama",
+                "War",
+              ],
+              "id": 143,
+              "overview": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I. Together with several other young German soldiers, he experiences the horrors of war, such evil of which he had not conceived of when signing up to fight. They eventually become sad, tormented, and confused of their purpose.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/9gn5ce3B2vOpk9pOGeUjmFecIo5.jpg",
+              "release_date": "1930-04-29",
+              "revenue": 0,
+              "runtime": 133,
+              "tagline": "They left for war as boys never to return as men.",
+              "title": "All Quiet on the Western Front",
+              "vote_average": 7.6,
+              "vote_count": 216,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "901",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 1500000,
+              "genres": Array [
+                "Comedy",
+                "Drama",
+                "Romance",
+              ],
+              "id": 901,
+              "overview": "City Lights is the first silent film that Charlie Chaplin directed after he established himself with sound accompanied films. The film is about a penniless man who falls in love with a flower girl. The film was a great success and today is deemed a cult classic.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/bXNvzjULc9jrOVhGfjcc64uKZmZ.jpg",
+              "release_date": "1931-01-30",
+              "revenue": 19181,
+              "runtime": 87,
+              "tagline": "True Blind Love",
+              "title": "City Lights",
+              "vote_average": 8.2,
+              "vote_count": 581,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "138",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 355000,
+              "genres": Array [
+                "Horror",
+              ],
+              "id": 138,
+              "overview": "The legend of vampire Count Dracula begins here with this original 1931 Dracula film from Bela Lugosi.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/hA9kQrIwDHJKl1pt8GpJdDnBzim.jpg",
+              "release_date": "1931-02-12",
+              "revenue": 0,
+              "runtime": 72,
+              "tagline": "The story of the strangest passion the world has ever known!",
+              "title": "Dracula",
+              "vote_average": 7.2,
+              "vote_count": 329,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3035",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 291000,
+              "genres": Array [
+                "Drama",
+                "Horror",
+                "Science Fiction",
+              ],
+              "id": 3035,
+              "overview": "Henry Frankenstein is a doctor who is trying to discover a way to make the dead walk. He succeeds and creates a monster that has to deal with living again.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/wB58wlBAr6484Wm6VyFDqSD8VOJ.jpg",
+              "release_date": "1931-11-21",
+              "revenue": 12000000,
+              "runtime": 71,
+              "tagline": "The man who made a monster.",
+              "title": "Frankenstein",
+              "vote_average": 7.4,
+              "vote_count": 395,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "15849",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 196000,
+              "genres": Array [
+                "Horror",
+              ],
+              "id": 15849,
+              "overview": "An ancient Egyptian priest called Imhotep is revived when an archaeological expedition finds his mummy and one of the archaeologists accidentally reads an ancient life-giving spell. Imhotep, escaping from the field site, goes in search for the reincarnation of the soul of his lover.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/vSKpbZVvzqQcw6htiyEinbCY9vq.jpg",
+              "release_date": "1932-12-22",
+              "revenue": 0,
+              "runtime": 73,
+              "tagline": "It comes to life!",
+              "title": "The Mummy",
+              "vote_average": 6.8,
+              "vote_count": 155,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "244",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 672000,
+              "genres": Array [
+                "Action",
+                "Adventure",
+                "Drama",
+                "Horror",
+              ],
+              "id": 244,
+              "overview": "An adventure film about a film crew in search of a monster on a remote island. The crew finds King Kong and decides to take him back to New York as a money making spectacle. The film is a masterpiece of Stop-Motion in filmmaking history and inspired a line of King Kong films.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/vXInYahVp31uL8wZORckaoHq565.jpg",
+              "release_date": "1933-04-07",
+              "revenue": 10000000,
+              "runtime": 100,
+              "tagline": "A Monster of Creation's Dawn Breaks Loose in Our World Today!",
+              "title": "King Kong",
+              "vote_average": 7.7,
+              "vote_count": 448,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3078",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 325000,
+              "genres": Array [
+                "Comedy",
+                "Romance",
+              ],
+              "id": 3078,
+              "overview": "Ellie Andrews has just tied the knot with society aviator King Westley when she is whisked away to her father's yacht and out of King's clutches. Ellie jumps ship and eventually winds up on a bus headed back to her husband. Reluctantly she must accept the help of out-of- work reporter Peter Warne. Actually, Warne doesn't give her any choice: either she sticks with him until he gets her back to her husband, or he'll blow the whistle on Ellie to her father. Either way, Peter gets what he wants... a really juicy newspaper story!",
+              "poster_path": "https://image.tmdb.org/t/p/w500/k63JqnFvkIGWGhjsqRiksZw2OSs.jpg",
+              "release_date": "1934-02-22",
+              "revenue": 4500000,
+              "runtime": 105,
+              "tagline": "TOGETHER... for the first time",
+              "title": "It Happened One Night",
+              "vote_average": 7.7,
+              "vote_count": 356,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "260",
+          "nodeType": "function",
+          "props": Object {
+            "movie": Object {
+              "budget": 0,
+              "genres": Array [
+                "Action",
+                "Thriller",
+                "Mystery",
+              ],
+              "id": 260,
+              "overview": "Canadian Richard Hannay, residing in London, meets secret agent Annabella Smith immediately following a shots fired incident. She asks to go home with him. Back at Hannay's flat the mysterious woman confides that she fears for her life and is on a critical mission relating to protecting state air ministry secrets. Later that night assassins murder her. Believed by the police to be her killer, Hannay is forced to go on the run and flees to Scotland in a desperate attempt to see Annabella's mission through before it's too late. Along the way he chances upon beautiful Pamela, who unwillingly becomes his accomplice in the mission.",
+              "poster_path": "https://image.tmdb.org/t/p/w500/9v283GWj9a0AC8wwC4zriNqY1lZ.jpg",
+              "release_date": "1935-06-01",
+              "revenue": 0,
+              "runtime": 86,
+              "tagline": "Handcuffed to the girl who double-crossed him",
+              "title": "The 39 Steps",
+              "vote_average": 7.5,
+              "vote_count": 274,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

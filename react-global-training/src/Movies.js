@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import './Movies.css';
 import MoviesList from './MoviesList'
+import getMovies from './getMovies'
+
 class Movies extends Component {
-    state = {
-        searchText: '',
-        movies: [],
-        searchBy: 'title',
-        counter: 0,
-        sortBy: 'release_date'
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchText: '',
+            movies: [],
+            searchBy: 'title',
+            counter: 0,
+            sortBy: 'release_date'
+        }
     }
+
     async search() {
-        const movies = await this.getMovies();
+        const movies = await getMovies(this.state.searchText, this.state.searchBy, this.state.sortBy);
         this.setState({
             movies: movies.data,
             counter: movies.total
@@ -35,14 +41,8 @@ class Movies extends Component {
         });
     }
 
-    async getMovies() {
-        var url = `http://react-cdp-api.herokuapp.com/movies?search=${this.state.searchText}&searchBy=${this.state.searchBy}&sortBy=${this.state.sortBy}`;
-        console.log(url);
-        const response = await fetch(url);
-        return await response.json()
-    }
 
-    render() {
+    render() {        
         return (
             <React.Fragment>
                 <SearchPanel
@@ -53,7 +53,6 @@ class Movies extends Component {
                     sortBy={this.sortByChange.bind(this)} />
                 <MoviesList movies={this.state.movies} />
             </React.Fragment>
-
         )
     }
 }
