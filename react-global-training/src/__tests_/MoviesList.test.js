@@ -12,5 +12,6 @@ Enzyme.configure({ adapter: new Adapter() });
 it('MovieList', async () => {
     var x = await getMovies('', '', '', )
     const component = shallow(<MoviesList movies={x.data} />);
+    expect(component).toMatchSnapshot();
     }
 )

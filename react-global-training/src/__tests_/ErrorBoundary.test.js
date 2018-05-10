@@ -1,5 +1,4 @@
-import React from 'react';
-//import renderer from 'react-test-renderer';
+import React, { Component } from 'react';
 import App from './../App';
 import { shallow, mount } from 'enzyme';
 import ErrorBoundary from './../ErrorBoundary'
@@ -9,7 +8,28 @@ import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
 
 it('ErrorBoundary.test', () => {
-    const component = shallow(<ErrorBoundary />);
-
+    const component = mount(<ErrorBoundary />);
+    expect(component).toMatchSnapshot();
 }
 )
+
+it('ErrorBoundary.test', () => {
+        
+    const component = mount(
+    <ErrorBoundary>
+        <Exception />
+    </ErrorBoundary>);
+    expect(component).toMatchSnapshot();
+}
+)
+
+class Exception extends Component {
+    componentDidMount() {        
+        throw new Error('I crashed!');
+    }
+    render() {
+        return (
+            <div></div>
+        );
+    }
+}

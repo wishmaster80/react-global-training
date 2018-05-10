@@ -17,5 +17,5 @@ it('Movie test', () => {
         <Movie />
     </Router>
     );
-    console.log(component.debug());
+    expect(component).toMatchSnapshot();
 });
