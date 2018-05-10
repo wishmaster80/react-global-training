@@ -2,20 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-//import AppPure from './AppPure'
 import registerServiceWorker from './registerServiceWorker';
-// const HelloWorldFunctional = () => (
-//     <div>Hello Functional!</div>
-//    );
-   
-
-// const HelloWorld = React.createElement(
-//     "h1",
-//     null,
-//     "Hello React.createElement!", <App/>, <AppPure/>, <HelloWorldFunctional/>
-// )
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 
-ReactDOM.render(<App/>, document.getElementById('root'));
-
+ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById("root")
+  );
 registerServiceWorker();
