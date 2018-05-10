@@ -1,7 +1,6 @@
+import fetchData from './fetchData'
 async function getMovie(id){
     var url = `https://react-cdp-api.herokuapp.com/movies/${id}`
-    console.log(url);
-    const response = await fetch(url);
-    return await response.json()
+    return await fetchData(url);
 }
 export default getMovie;
