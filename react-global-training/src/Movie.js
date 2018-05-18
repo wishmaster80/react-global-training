@@ -10,10 +10,6 @@ import movieFetched from  './actions/movieFetched'
 import { connect } from "react-redux";
 
 class Movie extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         const movie = await getMovie(this.props.match.params.id);
         this.props.movieFetched(movie);

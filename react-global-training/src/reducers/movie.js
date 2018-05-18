@@ -15,7 +15,7 @@ export const movie = (state = {
         return {
               movie: state.movie,
               movies: action.movies.data
-          }        
+          }
     default:        
       return state;
   }
