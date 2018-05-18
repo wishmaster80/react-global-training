@@ -4,9 +4,7 @@ export const movie = (state = {
   
 }, action) => {  
   switch (action.type) {         
-
     case 'FETCH_MOVIE_SUCCESS':
-    console.log(action)
       return {
             movie: action.movie,
             movies: state.movies

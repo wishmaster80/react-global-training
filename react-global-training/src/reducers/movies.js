@@ -7,8 +7,7 @@ export const movies = (state = {
 }, action) => {
   //  console.log(state)
   //  console.log(action)
-  switch (action.type) {
-
+  switch (action.type) {    
     case 'FETCH_MOVIES_SUCCESS':
       return {
         movies: action.movies.data,
@@ -17,7 +16,7 @@ export const movies = (state = {
         searchBy: state.searchBy,
         sortBy: state.sortBy
       }
-    case 'SEARCH_TEXT_CHANGED':    
+    case 'SEARCH_TEXT_CHANGED':          
       return {
         movies: state.movies,
         counter: state.counter,
