@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Movies.css';
 import MoviesList from './MoviesList'
 import getMovies from './getMovies'
-import moviesFetched from  './actions/index'
+import moviesFetched from  './actions/moviesFetched'
 import { connect } from "react-redux";
 
 class Movies extends Component {
@@ -18,7 +18,7 @@ class Movies extends Component {
 
     async search() {        
         const movies = await getMovies(this.state.searchText, this.state.searchBy, this.state.sortBy);
-        this.props.moviesFetched(movies);     
+        this.props.moviesFetched(movies);
     }
 
     searchTextChange(event) {        
@@ -71,7 +71,7 @@ const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
     return (
         <React.Fragment>
             <div>
-                FIND YOUR MOVIE
+                FIND YOUR MOVIE 
         </div>
             <input onChange={searchText} />
             <div>

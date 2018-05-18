@@ -1,7 +1,7 @@
 export const movies = (state = {
   movies: [],
   counter: 0
-}, action) => {  
+}, action) => {    
   switch (action.type) {    
     case 'FETCH_MOVIES_SUCCESS':
       return {
