@@ -3,28 +3,26 @@ import './Movies.css';
 import MoviesList from './MoviesList'
 import getMovies from './getMovies'
 import moviesFetched from  './actions/moviesFetched'
+import searchTextChanged from './actions/searchTextChanged'
 import { connect } from "react-redux";
 
 class Movies extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            searchText: '',            
+        this.state = {            
             searchBy: 'title',
             counter: 0,
             sortBy: 'release_date'
         }
     }
 
-    async search() {        
-        const movies = await getMovies(this.state.searchText, this.state.searchBy, this.state.sortBy);
+    async search() {          
+        const movies = await getMovies(this.props.movies.searchText, this.state.searchBy, this.state.sortBy);
         this.props.moviesFetched(movies);
     }
 
     searchTextChange(event) {        
-        this.setState({
-            searchText: event.target.value,
-        });
+        this.props.searchTextChanged(event.target.value);
     }
 
     searchByChange(event) {
@@ -41,6 +39,7 @@ class Movies extends Component {
 
 
     render() {        
+        console.log(this.props);
         return (
             <React.Fragment>
                 <SearchPanel
@@ -58,10 +57,11 @@ class Movies extends Component {
 const mapStateToProps = (state) => {    
     return {
         movies: state.movies,
-        counter: state.counter
+        counter: state.counter,
+        searchText: state.searchText
     }
 };
-const mapDispatchToProps = { moviesFetched };
+const mapDispatchToProps = { moviesFetched, searchTextChanged };
 
 const MoviesContainer = connect(mapStateToProps, mapDispatchToProps)(Movies);
 export default MoviesContainer;
