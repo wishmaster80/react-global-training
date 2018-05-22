@@ -2,43 +2,29 @@ import React, { Component } from 'react';
 import './Movies.css';
 import MoviesList from './MoviesList'
 import getMovies from './getMovies'
+import moviesFetched from  './actions/moviesFetched'
+import searchTextChanged from './actions/searchTextChanged'
+import { connect } from "react-redux";
+import searchByChangeChanged from './actions/searchByChangeChanged'
+import sortByChangeChanged from './actions/sortByChangeChanged'
 
 class Movies extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            searchText: '',
-            movies: [],
-            searchBy: 'title',
-            counter: 0,
-            sortBy: 'release_date'
-        }
+    async search() {          
+        //console.log(this.props.movies)
+        const movies = await getMovies(this.props.searchText, this.props.searchBy, this.props.sortBy);
+        this.props.moviesFetched(movies);
     }
 
-    async search() {
-        const movies = await getMovies(this.state.searchText, this.state.searchBy, this.state.sortBy);
-        this.setState({
-            movies: movies.data,
-            counter: movies.total
-        })
+    searchTextChange(event) {        
+        this.props.searchTextChanged(event.target.value);
     }
 
-    searchTextChange(event) {
-        this.setState({
-            searchText: event.target.value,
-        });
-    }
-
-    searchByChange(event) {
-        this.setState({
-            searchBy: event.target.value,
-        });
+    searchByChange(event) {        
+        this.props.searchByChangeChanged(event.target.value);        
     }
 
     sortByChange(event) {
-        this.setState({
-            sortBy: event.target.value,
-        });
+        this.props.sortByChangeChanged(event.target.value);
     }
 
 
@@ -48,22 +34,33 @@ class Movies extends Component {
                 <SearchPanel
                     searchText={this.searchTextChange.bind(this)}
                     search={this.search.bind(this)}
-                    counter={this.state.counter}
+                    counter={this.props.movies.counter}
                     searchBy={this.searchByChange.bind(this)}
                     sortBy={this.sortByChange.bind(this)} />
-                <MoviesList movies={this.state.movies} />
+                <MoviesList movies={this.props.movies.movies } />
             </React.Fragment>
         )
     }
 }
-export default Movies;
+
+const mapStateToProps = (state) => {    
+    return {
+        movies: state.movies,
+        counter: state.counter,
+        searchBy: state.searchBy
+    }
+};
+const mapDispatchToProps = { moviesFetched, searchTextChanged, searchByChangeChanged, sortByChangeChanged };
+
+const MoviesContainer = connect(mapStateToProps, mapDispatchToProps)(Movies);
+export default MoviesContainer;
 
 
 const SearchPanel = ({ searchText, search, counter, searchBy, sortBy }) => {
     return (
         <React.Fragment>
             <div>
-                FIND YOUR MOVIE
+                FIND YOUR MOVIE 
         </div>
             <input onChange={searchText} />
             <div>

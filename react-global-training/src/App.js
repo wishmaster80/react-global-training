@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import ErrorBoundary from './ErrorBoundary'
-import Movies from './Movies'
-import Movie from './Movie'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import MoviesContainer from './Movies'
+import MovieContainer from './Movie'
+import { BrowserRouter as Router,  Route } from 'react-router-dom';
 
 class App extends Component {
 
@@ -19,8 +15,8 @@ class App extends Component {
         <ErrorBoundary>
           <Router>
             <React.Fragment>
-              <Route exact path="/" component={Movies} />
-              <Route path="/movie/:id" component={Movie} />
+              <Route exact path="/" component={MoviesContainer} />
+              <Route path="/movie/:id" component={MovieContainer} />
             </React.Fragment>
           </Router>
         </ErrorBoundary>
@@ -30,14 +26,3 @@ class App extends Component {
 }
 
 export default App;
-
-// class Exception extends Component {
-//   componentDidMount() {
-//     throw new Error('I crashed!');
-//   }
-//   render() {
-//     return (
-//       <div></div>
-//     );
-//   }
-// }

@@ -22,7 +22,9 @@
     "eject": "react-scripts eject",
     "build:dev": "webpack --env dev",
     "build:prod": "webpack --env prod",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "jest": "jest",
+    "cover": "jest --coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
