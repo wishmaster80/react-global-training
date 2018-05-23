@@ -20,7 +20,7 @@ class Movie extends Component {
     render() {
         return (
             <React.Fragment>
-                { <Link to="/">Search</Link> }
+                { <Link to="/movies">Search</Link> }
                 <div>
                     {this.props.data.movie.title}
                     <MovieDetails movie={this.props.data.movie} />
