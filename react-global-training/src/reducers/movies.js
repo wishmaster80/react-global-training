@@ -16,7 +16,7 @@ export const movies = (state = {
         searchBy: state.searchBy,
         sortBy: state.sortBy
       }
-    case 'SEARCH_TEXT_CHANGED':          
+    case 'SEARCH_TEXT_CHANGED':   
       return {
         movies: state.movies,
         counter: state.counter,

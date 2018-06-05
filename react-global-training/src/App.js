@@ -4,7 +4,7 @@ import './App.css';
 import ErrorBoundary from './ErrorBoundary'
 import MoviesContainer from './Movies'
 import MovieContainer from './Movie'
-import { BrowserRouter as Router,  Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
 class App extends Component {
 
@@ -15,8 +15,12 @@ class App extends Component {
         <ErrorBoundary>
           <Router>
             <React.Fragment>
-              <Route exact path="/" component={MoviesContainer} />
-              <Route path="/movie/:id" component={MovieContainer} />
+              <Switch>
+                <Route exact path="/movies/" component={MoviesContainer} />
+                <Route path="/search/:searchText/:searchBy/:sortBy" component={MoviesContainer} />
+                <Route path="/movie/:id" component={MovieContainer} />
+                <Route path="/" component={PageNotFound} />
+              </Switch>
             </React.Fragment>
           </Router>
         </ErrorBoundary>
@@ -26,3 +30,17 @@ class App extends Component {
 }
 
 export default App;
+
+const PageNotFound = (props) => {
+  return (
+    <div>
+      <div>
+        Page not found 404
+      </div>
+      <div>
+        <Link to="/movies">movies</Link>
+      </div>
+    </div>
+  )
+
+}
