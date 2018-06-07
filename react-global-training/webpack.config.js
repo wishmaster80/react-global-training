@@ -1,5 +1,3 @@
-const path = require("path");
+const path = require('path');
 
-module.exports =(env) => {
-  return require(`./webpack.${env}.config.js`)
-}
+module.exports = env => require(`./webpack.${env}.config.js`);

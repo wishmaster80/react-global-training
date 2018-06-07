@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
 import './Movie.css';
-import MoviesList from './MoviesList'
+import MoviesList from './MoviesList';
 import { Link } from 'react-router-dom';
-import getMovie from './getMovie'
-import getMovies from './getMovies'
+import getMovie from './getMovie';
+import getMovies from './getMovies';
 
-import moviesFetched from  './actions/moviesFetched'
-import movieFetched from  './actions/movieFetched'
-import { connect } from "react-redux";
+import moviesFetched from './actions/moviesFetched';
+import movieFetched from './actions/movieFetched';
+import { connect } from 'react-redux';
 
 class Movie extends Component {
-    async componentDidMount() {
-        const movie = await getMovie(this.props.match.params.id);
-        this.props.movieFetched(movie);
-        const movies = await getMovies(movie.genres);
-        this.props.moviesFetched(movies);
-        
-    }
-    render() {
-        return (
+  async componentDidMount() {
+    const movie = await getMovie(this.props.match.params.id);
+    this.props.movieFetched(movie);
+    const movies = await getMovies(movie.genres);
+    this.props.moviesFetched(movies);
+  }
+  render() {
+    return (
             <React.Fragment>
                 { <Link to="/movies">Search</Link> }
                 <div>
@@ -30,16 +29,13 @@ class Movie extends Component {
                     <MoviesList movies={this.props.data.movies} />
                 </div>
             </React.Fragment>
-        )
-    }
-
+    );
+  }
 }
 
-const mapStateToProps = (state) => {    
-    return {
-        data: state.movie
-    }
-};
+const mapStateToProps = state => ({
+  data: state.movie,
+});
 const mapDispatchToProps = { movieFetched, moviesFetched };
 
 
@@ -47,8 +43,7 @@ const MoviesContainer = connect(mapStateToProps, mapDispatchToProps)(Movie);
 export default MoviesContainer;
 
 
-const MovieDetails = ({ movie }) => {
-    return (
+const MovieDetails = ({ movie }) => (
         <div>
             <img
                 src={movie.poster_path} alt={movie.title}
@@ -59,5 +54,4 @@ const MovieDetails = ({ movie }) => {
                 <p>{movie.overview}</p>
             </div>
         </div>
-    )
-}
+);

@@ -1,6 +1,6 @@
-const moviesFetched = (movies) => ({
+const moviesFetched = movies => ({
   type: 'FETCH_MOVIES_SUCCESS',
-  movies
+  movies,
 });
 
 export default moviesFetched;

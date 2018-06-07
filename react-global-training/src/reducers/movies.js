@@ -3,42 +3,42 @@ export const movies = (state = {
   counter: 0,
   searchText: '',
   searchBy: 'title',
-  sortBy: 'release_date'
+  sortBy: 'release_date',
 }, action) => {
-  // console.log('red state')  
+  // console.log('red state')
   // console.log(state)
-  // console.log('red action')  
+  // console.log('red action')
   // console.log(action)
-  switch (action.type) {    
+  switch (action.type) {
     case 'FETCH_MOVIES_SUCCESS':
       return {
         ...state,
         movies: action.movies.data,
-        counter: action.movies.total
-      }
-    case 'SEARCH_TEXT_CHANGED':   
+        counter: action.movies.total,
+      };
+    case 'SEARCH_TEXT_CHANGED':
       return {
         ...state,
-        searchText: action.searchText        
-      }
-      case 'SEARCH_BY_TEXT_CHANGED':
+        searchText: action.searchText,
+      };
+    case 'SEARCH_BY_TEXT_CHANGED':
       return {
         ...state,
-        searchBy: action.searchBy
-      }
-      case 'SORT_BY_TEXT_CHANGED':
+        searchBy: action.searchBy,
+      };
+    case 'SORT_BY_TEXT_CHANGED':
       return {
         ...state,
-        sortBy: action.sortBy
-      }    
-      case 'UPDATE_LIST':
+        sortBy: action.sortBy,
+      };
+    case 'UPDATE_LIST':
       return {
         ...state,
-        updateList : true
-      }                  
+        updateList: true,
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
 export default movies;
