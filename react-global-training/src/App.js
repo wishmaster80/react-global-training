@@ -19,7 +19,8 @@ class App extends Component {
                 <Route exact path="/movies/" component={MoviesContainer} />
                 <Route path="/search/:searchText/:searchBy/:sortBy" component={MoviesContainer} />
                 <Route path="/movie/:id" component={MovieContainer} />
-                <Route path="/" component={PageNotFound} />
+                <Route path="/" component={MoviesContainer} />
+                <Route component={PageNotFound} />
               </Switch>
             </React.Fragment>
           </Router>

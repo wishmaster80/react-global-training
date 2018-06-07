@@ -5,41 +5,37 @@ export const movies = (state = {
   searchBy: 'title',
   sortBy: 'release_date'
 }, action) => {
-  //  console.log(state)
-  //  console.log(action)
+  // console.log('red state')  
+  // console.log(state)
+  // console.log('red action')  
+  // console.log(action)
   switch (action.type) {    
     case 'FETCH_MOVIES_SUCCESS':
       return {
+        ...state,
         movies: action.movies.data,
-        counter: action.movies.total,
-        searchText: state.searchText,
-        searchBy: state.searchBy,
-        sortBy: state.sortBy
+        counter: action.movies.total
       }
     case 'SEARCH_TEXT_CHANGED':   
       return {
-        movies: state.movies,
-        counter: state.counter,
-        searchText: action.searchText,
-        searchBy: state.searchBy,
-        sortBy: state.sortBy
+        ...state,
+        searchText: action.searchText        
       }
       case 'SEARCH_BY_TEXT_CHANGED':
       return {
-        movies: state.movies,
-        counter: state.counter,
-        searchText: state.searchText,
-        searchBy: action.searchBy,
-        sortBy: state.sortBy
+        ...state,
+        searchBy: action.searchBy
       }
       case 'SORT_BY_TEXT_CHANGED':
       return {
-        movies: state.movies,
-        counter: state.counter,
-        searchText: state.searchText,
-        searchBy: state.searchBy,
+        ...state,
         sortBy: action.sortBy
-      }            
+      }    
+      case 'UPDATE_LIST':
+      return {
+        ...state,
+        updateList : true
+      }                  
     default:
       return state
   }
