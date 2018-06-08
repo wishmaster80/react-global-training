@@ -1,4 +1,3 @@
-
 import movieFetched from '../../actions/movieFetched';
 
 describe('>>>A C T I O N --- Test movieFetched', () => {

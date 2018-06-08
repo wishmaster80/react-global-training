@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './Movie.css';
 import MoviesList from './MoviesList';
-import { Link } from 'react-router-dom';
 import getMovie from './getMovie';
 import getMovies from './getMovies';
-
 import moviesFetched from './actions/moviesFetched';
 import movieFetched from './actions/movieFetched';
-import { connect } from 'react-redux';
 
 class Movie extends Component {
   async componentDidMount() {

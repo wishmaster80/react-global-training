@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import './App.css';
 import ErrorBoundary from './ErrorBoundary';
 import MoviesContainer from './Movies';
 import MovieContainer from './Movie';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
+const PageNotFound = () => (
+  <div>
+    <div>
+      Page not found 404
+    </div>
+    <div>
+      <Link to="/movies">movies</Link>
+    </div>
+  </div>
+);
+
+
+const App = () => (
       <React.Fragment>
         <ErrorBoundary>
           <Router>
@@ -24,19 +33,6 @@ class App extends Component {
           </Router>
         </ErrorBoundary>
       </React.Fragment>
-    );
-  }
-}
+);
 
 export default App;
-
-const PageNotFound = props => (
-    <div>
-      <div>
-        Page not found 404
-      </div>
-      <div>
-        <Link to="/movies">movies</Link>
-      </div>
-    </div>
-);

@@ -1,12 +1,11 @@
 import React from 'react';
-// import renderer from 'react-test-renderer';
-import App from './../App';
-import { shallow, mount } from 'enzyme';
-import MoviesList from './../MoviesList';
-
-import getMovies from './../__mocks__/getMovies';
-import Enzyme from 'enzyme';
+import { Enzyme, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+
+import MoviesList from './../MoviesList';
+import App from './../App';
+import getMovies from './../__mocks__/getMovies';
+
 
 Enzyme.configure({ adapter: new Adapter() });
 

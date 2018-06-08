@@ -1,12 +1,10 @@
 import React from 'react';
-// import renderer from 'react-test-renderer';
-import Movies from './../Movies';
-import { shallow, mount } from 'enzyme';
-import { store } from './../store';
 import { Provider } from 'react-redux';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Enzyme, shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import Movies from './../Movies';
+import { store } from './../store';
 
 Enzyme.configure({ adapter: new Adapter() });
 
