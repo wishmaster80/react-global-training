@@ -25,13 +25,16 @@
     "cypress:open": "cypress open",
     "jest": "jest",
     "cover": "jest --coverage",
-    "lint": "eslint ./ --cache --ignore-pattern .eslintignore  --fix"
+    "lint": "eslint ./ --cache --ignore-pattern .eslintignore  --fix",
+    "flow": "flow"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "0.28.11",
     "cypress": "^2.1.0",
@@ -40,6 +43,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
+    "flow-bin": "^0.74.0",
     "html-webpack-plugin": "3.2.0",
     "jest": "^22.4.3",
     "jest-fetch-mock": "^1.5.0",
