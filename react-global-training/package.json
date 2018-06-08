@@ -25,7 +25,7 @@
     "cypress:open": "cypress open",
     "jest": "jest",
     "cover": "jest --coverage",
-    "lint": "eslint ./ --cache --ignore-pattern .gitignore --fix"
+    "lint": "eslint ./ --cache --ignore-pattern .eslintignore  --fix"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
