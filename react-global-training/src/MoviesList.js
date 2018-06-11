@@ -1,26 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MoviesList = ({ movies }) => {    
-    if (movies.length === 0)
-        return (<NoFilmsFound />)
+const MoviesList = ({ movies }) => {
+  if (movies.length === 0) { return (<NoFilmsFound />); }
 
-    return (
+  return (
         <div className="row">
-            {movies.map((movie) => <Movie key={movie.id} movie={movie} />)}
+            {movies.map(movie => <Movie key={movie.id} movie={movie} />)}
         </div>
-    )
-}
+  );
+};
 
 export default MoviesList;
-const NoFilmsFound = () => {
-    return (
+const NoFilmsFound = () => (
         <h1>No films Found</h1>
-    )
-}
+);
 
-const Movie = ({ movie }) => {
-    return (
+const Movie = ({ movie }) => (
         <Link to={`/movie/${movie.id}`}>
         <div className="col" hight='300px' >
             <img
@@ -33,5 +29,4 @@ const Movie = ({ movie }) => {
             </div>
         </div>
         </Link>
-    )
-}
+);

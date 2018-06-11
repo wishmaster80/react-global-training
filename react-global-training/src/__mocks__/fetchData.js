@@ -1,4 +1,4 @@
-async function fetchData(url) {    
-    return {};
+async function fetchData(url) {
+  return {};
 }
 export default fetchData;
